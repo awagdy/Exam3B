@@ -125,5 +125,9 @@ public class customers {
     public void setAge(int age) {
         this.age = age;
     }
+    
+    public String toString(){
+        return "Customers{" + "custID=" + custID + ", FIRSTNAME=" + firstName + ", LASTNAME=" + lastName + ", ADDR1=" + addr1 + ", ADDR2=" + addr2 + ", CITY=" + city + ", STATE=" + state + ", ZIP=" + zip + ", EMAILADDR=" + emailAddr + ", AGE=" + age +'}';
+    }
 
 }
