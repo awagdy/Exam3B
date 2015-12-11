@@ -14,9 +14,16 @@
             <div class="header"> 
                 <h1>Customer Database</h1>
                 <p1>
+                    <div> 
+                        <ul class="navlist">
+                            <li><a href="index.jsp">Home</a></li>
+                            <li><a href="read">View All Customers</a></li>
+                            <li><a href="add">Add a new Customer</a></li>
+                        </ul>
+                    </div>
                     <form name="searchForm" action="search" method="get">
 
-                        <input type="text" name="searchVal" value="Search by Last Name"/>
+                        <input type="text" name="searchVal" value=""/>
 
                         <br>
 
@@ -27,9 +34,7 @@
             </div>
             <div class="main">
 
-                <a href="read">View All Customers</a>
-                <br> <br>
-                <a href="search.jsp">Search Customers</a>
+                
             </div>
             <div class="footer">
 

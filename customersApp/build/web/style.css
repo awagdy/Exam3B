@@ -7,11 +7,29 @@ and open the template in the editor.
     Created on : Oct 28, 2015, 7:30:40 PM
     Author     : thewagdy
 */
+.navlist
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    
+}
 
+.navlist li
+{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.navlist li:before { content: "-  "; }
+.navlist li:first-child:before { content: ""; }
 body{
     background-color: #D2B48C;
 }
-.wrap{text-align: center; width:90%; margin:0 auto; border:8px solid black; margin-top: 25px;}
+.wrap{text-align: center; width:90%; margin:0 auto; border:3px solid black; margin-top: 25px;}
 .header{background-color: tan; text-align: left; padding: 25px;}
 .main{background-color: #D2B48C; text-align: left; padding: 25px;}
 .footer{background-color: tan; text-align: left; padding: 25px; font-size: x-small; }
