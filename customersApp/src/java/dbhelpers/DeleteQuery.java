@@ -52,16 +52,16 @@ public class DeleteQuery {
             Logger.getLogger(DeleteQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public void doDelete(int CARID){
+    public void doDelete(int custID){
         try {
             // set up a string to hold query
-            String query ="DELETE FROM Cars WHERE CARID = ?";
+            String query ="DELETE FROM CUSTOMERS WHERE custID = ?";
             
             //create a preparedstatement using our query string
             PreparedStatement ps = conn.prepareStatement(query);
             
             // fill in the preparedstatement
-            ps.setInt(1,CARID);
+            ps.setInt(1,custID);
             
             //execute query
             ps.executeUpdate();

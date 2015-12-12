@@ -94,7 +94,7 @@ public class ReadQuery {
         table += "Age";
         table += "</th>";
         table += "<th>";
-        table += "Update or Delete a Car from Database";
+        table += "Update or Delete a Customer from Database";
         table += "</th>";
         table += "</tr>";
 

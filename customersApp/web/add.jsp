@@ -36,40 +36,40 @@
                 <form name="addForm" action="addcustomer" method="get"/>
                 <p>
                     <label>First Name</label>
-                    <input type="text" name="firstName" value=""  required/>
+                    <input type="text" name="firstName" value="" pattern="[A-Za-z]{1,}" title="Please type a valid first name"  required/>
                     <br>
                     <br>
-                    
+
                 </p>
                 <p>
 
                     <label>Last Name</label>
-                    <input type="text" name="lastName" value=""  required/>
+                    <input type="text" name="lastName" value="" pattern="[A-Za-z]{1,}" title="Please type a valid last name" required/>
                     <br>
-                     <br>
-                    
+                    <br>
+
                 </p>
                 <p>
                     <label>Address 1</label>
                     <input type="text" name="addr1" value=""  required/>
-                     <br>
+                    <br>
                     <br>
                 </p>
                 <p>
                     <label>Address 2</label>
                     <input type="text" name="addr2" value=""  required/>
-                     <br>
+                    <br>
                     <br>
                 </p>
                 <p>
                     <label>City</label>
-                    <input type="text" name="city" value=""  required/>
+                    <input type="text" name="city" value="" pattern="[A-Za-z\s]{1,}" title="Please type a valid city name"  required/>
                     <br>
                     <br>
                 </p>
                 <p>
                     <label>State:</label>
-                    <select name="state">
+                    <select name="state" required>
                         <option value="">Please choose a state...</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -123,27 +123,27 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select>
-                     <br>
+                    <br>
                     <br>
                 </p>
                 <p>
                     <label>Zip</label>
-                    <input type="number" name="zip" value="" maxlength="5"  required/>
-                     <br>
+                    <input type="text" pattern="[0-9]{5}"name="zip" value="" maxlength="5"  required/>
+                    <br>
                     <br>
                 </p>
                 <p>
                     <label>Email Address</label>
                     <input type="email" name="emailAddr" value=""  required/>
-                     <br>
+                    <br>
                     <br>
                 </p>
                 <p>
                     <label>Age</label>
-                    <input type="number" name="age" value="" required/>
-                     <br>
+                    <input type="text"  pattern="[0-9]{1,}" name="age" value="" required/>
                     <br>
-                     <br>
+                    <br>
+                    <br>
                     <br>
                 </p>
                 <p>

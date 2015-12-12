@@ -75,12 +75,12 @@ public class UpdateFormServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //get the CarID
-        int CustID = Integer.parseInt(request.getParameter("CUSTID"));
+        //get the CustID
+        int custID = Integer.parseInt(request.getParameter("CUSTID"));
         
         //Create a ReadRecord Class
         
-        ReadRecord rr = new ReadRecord(CustID);
+        ReadRecord rr = new ReadRecord(custID);
         
         //use read record to get the car data
         rr.doRead();

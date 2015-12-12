@@ -77,15 +77,15 @@ public class AddServlet extends HttpServlet {
             throws ServletException, IOException {
 
         //Get the data
-        String FirstName = request.getParameter("FIRSTSNAME");
-        String LastName = request.getParameter("LASTNAME");
-        String Addr1 = request.getParameter("ADDR1");
-        String Addr2 = request.getParameter("ADDR2");
-        String City = request.getParameter("CITY");
-        String State = request.getParameter("STATE");
-        String Zip = request.getParameter("ZIP");
-        String EmailAddr = request.getParameter("EMAILADDR");
-        int Age = Integer.parseInt(request.getParameter("AGE"));
+        String FirstName = request.getParameter("firstName");
+        String LastName = request.getParameter("lastName");
+        String Addr1 = request.getParameter("addr1");
+        String Addr2 = request.getParameter("addr2");
+        String City = request.getParameter("city");
+        String State = request.getParameter("state");
+        String Zip = request.getParameter("zip");
+        String EmailAddr = request.getParameter("emailAddr");
+        int Age = Integer.parseInt(request.getParameter("age"));
         //Setup a new car object
 
         customers customer = new customers();

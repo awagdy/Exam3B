@@ -5,6 +5,7 @@
  */
 package controller;
 
+
 import dbhelpers.UpdateQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,7 +21,7 @@ import model.customers;
  *
  * @author thewagdy
  */
-@WebServlet(name = "UpdateServlet", urlPatterns = {"/updateCar"})
+@WebServlet(name = "UpdateServlet", urlPatterns = {"/updatecust"})
 public class UpdateServlet extends HttpServlet {
 
     /**
@@ -78,15 +79,15 @@ public class UpdateServlet extends HttpServlet {
         
         //get the form data and set up a new car object
         int CustID = Integer.parseInt(request.getParameter("CUSTID"));
-        String FirstName = request.getParameter("FIRSTSNAME");
-        String LastName = request.getParameter("LASTNAME");
-        String Addr1 = request.getParameter("ADDR1");
-        String Addr2 = request.getParameter("ADDR2");
-        String City = request.getParameter("CITY");
-        String State = request.getParameter("STATE");
-        String Zip = request.getParameter("ZIP");
-        String EmailAddr = request.getParameter("EMAILADDR");
-        int Age = Integer.parseInt(request.getParameter("AGE"));
+        String FirstName = request.getParameter("firstName");
+        String LastName = request.getParameter("lastName");
+        String Addr1 = request.getParameter("addr1");
+        String Addr2 = request.getParameter("addr1");
+        String City = request.getParameter("city");
+        String State = request.getParameter("state");
+        String Zip = request.getParameter("zip");
+        String EmailAddr = request.getParameter("emailAddr");
+        int Age = Integer.parseInt(request.getParameter("age"));
         
         
        
@@ -102,7 +103,7 @@ public class UpdateServlet extends HttpServlet {
         customer.setEmailAddr(EmailAddr);
         customer.setAge(Age);
         
-        //create an UpdateQuery object and use it to update the car
+        //create an UpdateQuery object and use it to update the customer
         
         UpdateQuery uq = new UpdateQuery();
         uq.doUpdate(customer);
